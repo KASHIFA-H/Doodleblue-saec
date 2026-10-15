@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="page-shell">
+        <header class="profile-header">
+            <div class="profile-copy">
+                <span class="brand-badge">About Me</span>
+                <h1>Kashifa H.</h1>
+                <p>My name is Kashifa H. I’m pursuing B.Tech in Artificial Intelligence and Data Science at S.A. Engineering College, Chennai.</p>
+            </div>
+            <img src="kashifa.jpg" alt="Kashifa H." class="profile-photo">
+        </header>
+
+        <section class="content-grid">
+            <div class="panel">
+                <h2>Education</h2>
+                <p><strong>B.Tech Artificial Intelligence and Data Science</strong></p>
+                <p>S.A. Engineering College, Chennai</p>
+            </div>
+
+            <div class="panel">
+                <h2>My Skills</h2>
+                <ul class="skill-list">
+                    <li>Python</li>
+                    <li>HTML, CSS and JavaScript</li>
+                    <li>Machine Learning</li>
+                    <li>Computer Vision</li>
+                    <li>React and Angular</li>
+                    <li>SQL and FastAPI</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="panel form-panel">
+            <h2>Let's Connect</h2>
+            <form action="submit_form.php" method="post" class="contact-form">
+                <div class="field-row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="field-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="field-row">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="Job Role" value="Fullstack Developer"> Full Stack Developer</label>
+                    <label><input type="checkbox" name="Job Role" value="AI and Data Science"> AI and Data Science</label>
+                    <label><input type="checkbox" name="Job Role" value="Computer Vision"> Computer Vision</label>
+                </div>
+
+                <button type="submit" class="primary-btn">Submit</button>
+            </form>
+        </section>
+
+        <section class="content-grid">
+            <div class="panel">
+                <h2>Internship Experience</h2>
+                <ul>
+                    <li>Technical Team Assistant Intern at Admini</li>
+                    <li>AI and Data Science Intern at REUDE Technologies</li>
+                    <li>Full Stack Developer Intern at Femtosoft</li>
+                </ul>
+            </div>
+
+            <div class="panel">
+                <h2>My Projects</h2>
+                <ul>
+                    <li>AI Based Drowsiness Detection</li>
+                    <li>CityGuard</li>
+                    <li>Occupancy Detection using YOLOv8</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>Semester-wise Performance</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Semester</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Semester 1</th>
+                        <td>Kashifa H.</td>
+                        <td>9.2 CGPA</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Semester 2</th>
+                        <td>Kashifa H.</td>
+                        <td>9.0 CGPA</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Semester 3</th>
+                        <td>Kashifa H.</td>
+                        <td>9.5 CGPA</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="panel goal-panel">
+            <h2>My Goal</h2>
+            <p>My goal is to become an AI and Data Science professional.</p>
+            <div class="link-row">
+                <a href="https://www.linkedin.com/in/kashifa-h" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a href="kashifa.html">Back to Home</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kashifa H. All rights reserved.</p>
+    </footer>
+</body>
+</html>

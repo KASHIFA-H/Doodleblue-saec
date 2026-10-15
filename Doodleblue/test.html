@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Form Controls</title>
+  <link rel="stylesheet" href="test.css">
+</head>
+<body>
+  <h2>Registration Form</h2>
+  <form action="/preferences" method="post">
+    <table cellpadding="8" cellspacing="5">
+      <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" id="name" name="name" minlength="2" maxlength="60" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" id="email" name="email" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="password">Password:</label></td>
+        <td><input type="password" id="password" name="password" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="phone">Phone number:</label></td>
+        <td><input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Enter a 10 digit phone number" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="dob">Date of Birth:</label></td>
+        <td><input type="date" id="dob" name="dob" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="course">Course:</label></td>
+        <td>
+          <select name="course" id="course" required>
+            <option value="">Select a course</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="bio">About you:</label></td>
+        <td><textarea id="bio" name="bio" rows="4" maxlength="200" placeholder="Write something about yourself..."></textarea></td>
+      </tr>
+
+      <tr>
+        <td><label for="resume">Resume (PDF):</label></td>
+        <td><input type="file" id="resume" name="resume" accept=".pdf,application/pdf"></td>
+      </tr>
+    </table>
+
+    <fieldset>
+      <legend>Terms and Conditions</legend>
+      <label for="terms">
+        <input type="checkbox" id="terms" name="terms" value="accepted" required>
+        I agree to the terms and conditions
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Select Your Skills</legend>
+      <label for="html-skill">
+        <input type="checkbox" id="html-skill" name="skills" value="html">
+        HTML
+      </label><br>
+      <label for="css-skill">
+        <input type="checkbox" id="css-skill" name="skills" value="css">
+        CSS
+      </label><br>
+      <label for="javascript-skill">
+        <input type="checkbox" id="javascript-skill" name="skills" value="javascript">
+        JavaScript
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Experience Level</legend>
+      <label for="beginner">
+        <input type="radio" id="beginner" name="experience" value="beginner" required>
+        Beginner
+      </label><br>
+      <label for="intermediate">
+        <input type="radio" id="intermediate" name="experience" value="intermediate">
+        Intermediate
+      </label><br>
+      <label for="expert">
+        <input type="radio" id="expert" name="experience" value="expert">
+        Expert
+      </label>
+    </fieldset>
+
+    <p>
+      <input type="submit" value="Create Account">
+      <input type="reset" value="Clear Form">
+    </p>
+  </form>
+</body>
+</html>
