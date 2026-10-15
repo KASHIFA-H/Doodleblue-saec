@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="container topbar-inner">
+          <a href="index.html" class="brand" aria-label="Campus Events Home">
+            <span class="brand-mark"></span>
+            <span>Campus Events</span>
+          </a>
+
+          <nav class="nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="events.html">Events</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="register.html" class="active" aria-current="page">Register</a>
+            <a href="event-details.html">Contact</a>
+            <a href="register.html" class="btn btn-primary">Register</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="section" style="padding-bottom: 18px;">
+          <div class="container">
+            <div class="page-title-box" style="padding: 22px 28px;">
+              <div>
+                <h1>Event Registration</h1>
+                <p>Fill out the form to register for an event.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" style="padding-top: 12px;">
+          <div class="container registration-layout">
+            <div class="form-panel">
+              <form>
+                <div class="form-grid">
+                  <div class="field">
+                    <label for="full-name">Full Name</label>
+                    <input id="full-name" type="text" placeholder="Enter your full name" />
+                  </div>
+
+                  <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="you@example.com" />
+                  </div>
+
+                  <div class="field">
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" type="tel" placeholder="Enter your phone number" />
+                  </div>
+
+                  <div class="field">
+                    <label for="department">Department</label>
+                    <select id="department">
+                      <option value="">Select department</option>
+                      <option>Computer Science</option>
+                      <option>Information Technology</option>
+                      <option>Business</option>
+                      <option>Engineering</option>
+                      <option>Arts &amp; Design</option>
+                    </select>
+                  </div>
+
+                  <div class="field full">
+                    <label for="event">Choose an Event</label>
+                    <select id="event">
+                      <option value="">Select an event</option>
+                      <option>Tech Fest 2026</option>
+                      <option>Cultural Day</option>
+                      <option>Inter-Collegiate Sports Meet</option>
+                      <option>AI &amp; Data Science Workshop</option>
+                      <option>Photography Contest</option>
+                    </select>
+                  </div>
+
+                  <div class="field full">
+                    <label for="message">Message (Optional)</label>
+                    <textarea id="message" rows="4" placeholder="Any additional information..."></textarea>
+                  </div>
+                </div>
+
+                <label class="check-row">
+                  <input type="checkbox" />
+                  <span>I agree to the event rules and regulations.</span>
+                </label>
+
+                <button type="submit" class="btn btn-primary">Register</button>
+              </form>
+            </div>
+
+            <aside class="flow-panel" style="display:none;">
+              <h3>Navigation Flow</h3>
+              <div class="flow-steps">
+                <div class="flow-box"><span>Home</span>(index.html)</div>
+                <div class="flow-arrow"></div>
+                <div class="flow-box"><span>Events</span>(events.html)</div>
+                <div class="flow-arrow"></div>
+                <div class="flow-box"><span>Event Details</span>(event-details.html)</div>
+                <div class="flow-arrow"></div>
+                <div class="flow-box"><span>Register</span>(register.html)</div>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-inner">
+          <div>
+            <div class="footer-brand">
+              <span class="brand-mark"></span>
+              <span>Campus Events</span>
+            </div>
+            <p>Bringing students together through learning, creativity, and collaboration.</p>
+          </div>
+
+          <div class="footer-block">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="events.html">Events</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-block">
+            <h4>Follow Us</h4>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-block">
+            <h4>Register</h4>
+            <ul>
+              <li><a href="register.html">Join an Event</a></li>
+              <li><a href="schedule.html">View Schedule</a></li>
+              <li><a href="event-details.html">Event Details</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container footer-bottom">
+          <span>© 2026 Campus Events. All rights reserved.</span>
+          <div class="socials" aria-label="Social media links">
+            <a href="#">f</a>
+            <a href="#">in</a>
+            <a href="#">◌</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
